@@ -1,0 +1,25 @@
+{
+    "extends": "@vue/tsconfig/tsconfig.json",
+    "compilerOptions": {
+        "sourceMap": true,
+        "useDefineForClassFields": true,
+        "jsx": "preserve",
+        "target": "ESNext",
+        "baseUrl": ".",
+        "ignoreDeprecations": "5.0",
+        "verbatimModuleSyntax": false,
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "module": "NodeNext",
+        "moduleResolution": "NodeNext",
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "lib": ["esnext", "dom"],
+        "types": ["@dcloudio/types", "@types/wechat-miniprogram", "@uni-helper/uni-app-types"]
+    },
+    "vueCompilerOptions": {
+        "nativeTags": ["block", "component", "template", "slot"]
+    },
+    "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue"]
+}
